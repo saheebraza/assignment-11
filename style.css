@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 28px;
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #444;
+}
+
+.btn {
+  background-color: #e63946;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 350px;
+  max-width: 100%;
+}
+
+/* ===== About Section ===== */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  color: #444;
+}
+
+.about-date {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.calendar {
+  background-color: #e63946;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ===== Event Details ===== */
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+  flex-wrap: wrap;
+}
+
+.details-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.details-text h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.details-text ul {
+  list-style: none;
+}
+
+.details-text li {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.details-text .icon {
+  color: #e63946;
+  margin-right: 8px;
+}
+
+.details-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.details-img img {
+  width: 250px;
+  max-width: 100%;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero, .about, .details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img, .details-img img {
+    width: 280px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
